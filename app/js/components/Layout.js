@@ -7,12 +7,18 @@ import Body from "./Body";
 export default class Layout extends React.Component {
     constructor() {
         super();
+        this.state = {
+            title: 'Hassan kamal'
+        };
+    }
+    changeTitle (title) {
+        this.setState({title})
     }
     render () {
         return (
             <div>
-                <Header></Header>
-                <Body name={"Will Smith"}></Body>
+                <Header title={this.state.title} changeTitle={this.changeTitle.bind(this)}></Header>
+                <Body title={this.state.title} changeTitle={this.changeTitle.bind(this)}></Body>
                 <Footer></Footer>
             </div>
         );
