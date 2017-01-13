@@ -2,17 +2,17 @@ import React from "react";
 
 import Footer from "./Footer";
 import Header from "./Header";
+import Body from "./Body";
 
 export default class Layout extends React.Component {
     constructor() {
         super();
-        this.name = "Hassan kamal";
     }
     render () {
         return (
             <div>
                 <Header></Header>
-                    <h2>This is {this.name}</h2>
+                <Body name={"Will Smith"}></Body>
                 <Footer></Footer>
             </div>
         );
