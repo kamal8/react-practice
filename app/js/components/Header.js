@@ -1,6 +1,5 @@
 import React from "react";
 
-import Title from "./Header/Title";
 
 export default class Header extends React.Component {
     constructor () {
@@ -9,8 +8,8 @@ export default class Header extends React.Component {
     }
     render() {
         return (
-            <div>
-                <Title title={this.props.title}/>
+            <div class="landing-page-header">
+                <img src="https://myso.co/assets/img/myyogastudioonline_logo_1.png" alt="logo"/>
             </div>
         );
     }

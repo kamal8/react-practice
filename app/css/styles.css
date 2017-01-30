@@ -1,0 +1,8 @@
+/*global css*/
+.landing-page-header {
+    height: 124px;
+    text-align: center;
+}
+.landing-page-header img {
+    height: 100%;
+}
